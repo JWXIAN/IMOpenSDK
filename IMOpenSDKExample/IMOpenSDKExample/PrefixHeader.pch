@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  IMOpenSDKExample
+//
+//  Created by GJW on 2021/11/19.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+#import <UIKit/UIKit.h>
+
+#define IsSingle 0//是否为单个文本控件
+#define XFBackgroundColor   [UIColor colorWithWhite:0.9 alpha:1]
+#define kiPhoneX [[UIScreen mainScreen] bounds].size.width >=375.0f && [[UIScreen mainScreen] bounds].size.height >=812.0f&& kiPhone
+#define kiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//获取设备的物理高度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+//获取设备的物理宽度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define XFBackgroundColor   [UIColor colorWithWhite:0.9 alpha:1]
+
+//状态栏高度
+#define kStatusBarHeight (CGFloat)(kiPhoneX?(44):(20))
+// 导航栏高度
+#define kNavBarHBelow7 (44)
+// 状态栏和导航栏总高度
+#define kNavBarHAbove7 (CGFloat)(kiPhoneX?(88):(64))
+// TabBar高度
+#define ktabBarHeight (CGFloat)(kiPhoneX?(49+34):(49))
+// 顶部安全区域远离高度
+#define kTopBarSafeHeight (CGFloat)(kiPhoneX?(44):(0))
+// 底部安全区域远离高度
+#define kBottomSafeHeight (CGFloat)(kiPhoneX?(34):(0))
+// iPhoneX的状态栏高度差值
+#define kTopBarDifHeight (CGFloat)(kiPhoneX?(24):(0))
+
+//获取设备的物理高度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+//获取设备的物理宽度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#endif /* PrefixHeader_h */
